@@ -44,6 +44,10 @@ app.use("/api/v1/teacher", teacherRoutes);
 app.use("/api/v1/post", postRoutes);
 app.use("/api/v1/comments", commtRoutes);
 
+app.get("/", (req, res)=>{
+  res.json({message : "Hello to the world"})
+})
+
 //heroku deploy code 
 // if(process.env.NODE_ENV == "production"){
 //   app.use(express.static("frontend/dist"))
