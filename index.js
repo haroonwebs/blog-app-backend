@@ -22,7 +22,8 @@ dbconnection();
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://information-tan.vercel.app",
+    origin:
+      "https://infomationfront-muhammad-haroon-talibs-projects.vercel.app/",
     credentials: true,
   })
 );
